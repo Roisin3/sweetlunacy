@@ -1,0 +1,5 @@
+<h1>Pics Index</h1>
+
+<% @pics.each do |pic| %>
+    <%=  image_tag(pic.image.url, width: '100%', crop: "scale")  %>
+<% end %>
